@@ -25,6 +25,7 @@
         "guzzle/http" : "3.8.*@dev"
     },
     "require-dev" : {
+        "symfony/event-dispatcher": "v3.4.44",
         "guzzle/guzzle": "v3.8.1",
         "psr/log": "1.0.*",
         "satooshi/php-coveralls": "0.6.*@dev"
