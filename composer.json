@@ -22,18 +22,17 @@
     },
     "repositories": [
         {
-            "type":"vcs",
-            "url":"git@github.com:A24Group/guzzle.git"
+            "type": "vcs",
+            "url": "git@github.com:A24Group/guzzle.git"
         }
     ],
     "require": {
         "php" : ">=5.3.3",
-        "guzzle/http" : "3.8.*@dev"
+        "a24group/guzzle" : "dev-feature-php8-upgrade",
+        "symfony/event-dispatcher": "v3.4.44"
     },
     "require-dev" : {
-        "symfony/event-dispatcher": "v3.4.44",
-        "a24group/guzzle": "dev-feature-php8-upgrade",
         "psr/log": "1.0.*",
-        "satooshi/php-coveralls": "0.6.*@dev"
+        "php-coveralls/php-coveralls": "v2.5.2"
     }
 }
