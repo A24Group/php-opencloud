@@ -28,7 +28,7 @@
     ],
     "require": {
         "php" : ">=5.3.3",
-        "a24group/guzzle" : "dev-feature-php8-upgrade",
+        "a24group/guzzle" : "v3.9.0",
         "symfony/event-dispatcher": "v3.4.44"
     },
     "require-dev" : {
