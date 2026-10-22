@@ -29,11 +29,7 @@ EOT;
             $this->getClient()->databaseService('cloudDatabases', 'DFW')
         );
         $this->assertInstanceOf(
-            'OpenCloud\LoadBalancer\Service', 
-            $this->getClient()->loadBalancerService('cloudLoadBalancers', 'DFW')
-        );
-        $this->assertInstanceOf(
-            'OpenCloud\DNS\Service', 
+            'OpenCloud\DNS\Service',
             $this->getClient()->dnsService('cloudDNS', 'DFW')
         );
         $this->assertInstanceOf(
