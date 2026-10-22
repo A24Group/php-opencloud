@@ -18,7 +18,7 @@ use OpenCloud\Common\Http\Message\Formatter;
  * Note that the `Subdomain` class is defined in this same file because of
  * mutual dependencies.
  */
-class Domain extends Object
+class Domain extends DnsObject
 {
 
     public $id;

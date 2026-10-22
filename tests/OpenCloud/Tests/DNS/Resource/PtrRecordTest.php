@@ -12,10 +12,10 @@
 
 namespace OpenCloud\Tests\DNS\Resource;
 
-use OpenCloud\DNS\Resource\Object;
+use OpenCloud\DNS\Resource\DnsObject;
 use OpenCloud\Tests\DNS\DnsTestCase;
 
-class CustomRecord extends Object
+class CustomRecord extends DnsObject
 {
     public $name = 'fooBar';
 }
