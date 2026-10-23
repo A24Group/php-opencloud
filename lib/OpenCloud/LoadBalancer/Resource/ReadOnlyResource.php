@@ -16,7 +16,7 @@ namespace OpenCloud\LoadBalancer\Resource;
  * or deleted. Many subresources are like this, and this simplifies their
  * class definitions.
  */
-abstract class Readonly extends SubResource 
+abstract class ReadOnlyResource extends SubResource 
 {
 	
 	public function create($params = array()) 

@@ -14,7 +14,7 @@ namespace OpenCloud\LoadBalancer\Resource;
 /**
  * Reports all usage for a Load Balancer recorded within the preceding 24 hours.
  */
-class Usage extends Readonly 
+class Usage extends ReadOnlyResource
 {
     
     public $id;

@@ -14,7 +14,7 @@ namespace OpenCloud\LoadBalancer\Resource;
 /**
  * Used to get a list of billable load balancers for a specific date range
  */
-class BillableLoadBalancer extends Readonly 
+class BillableLoadBalancer extends ReadOnlyResource
 {
 
     protected static $url_resource = 'loadbalancers/billable';

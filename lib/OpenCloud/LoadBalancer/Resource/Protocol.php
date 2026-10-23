@@ -19,7 +19,7 @@ namespace OpenCloud\LoadBalancer\Resource;
  * 
  * @link http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/List_Load_Balancing_Protocols-d1e4269.html
  */
-class Protocol extends Readonly 
+class Protocol extends ReadOnlyResource
 {
 
     public $name;
