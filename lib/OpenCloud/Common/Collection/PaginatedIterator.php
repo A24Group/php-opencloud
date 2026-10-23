@@ -62,6 +62,11 @@ class PaginatedIterator extends ResourceIterator implements Iterator
     protected $required = array('resourceClass', 'baseUrl');
 
     /**
+     * @var string Set by setBaseUrl()
+     */
+    protected $baseUrl;
+
+    /**
      * Basic factory method to easily instantiate a new ResourceIterator.
      *
      * @param       $parent The parent object
