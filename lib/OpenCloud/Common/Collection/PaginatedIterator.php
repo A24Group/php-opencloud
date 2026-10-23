@@ -62,7 +62,7 @@ class PaginatedIterator extends ResourceIterator implements Iterator
     protected $required = array('resourceClass', 'baseUrl');
 
     /**
-     * @var string Set by setBaseUrl()
+     * @var \Guzzle\Http\Url Set by setBaseUrl()
      */
     protected $baseUrl;
 
