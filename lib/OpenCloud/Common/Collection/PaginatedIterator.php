@@ -98,11 +98,13 @@ class PaginatedIterator extends ResourceIterator implements Iterator
         return $this;
     }
 
+    #[\ReturnTypeWillChange]
     public function current()
     {
         return parent::current();
     }
 
+    #[\ReturnTypeWillChange]
     public function key()
     {
         return parent::key();
@@ -112,6 +114,7 @@ class PaginatedIterator extends ResourceIterator implements Iterator
      * {@inheritDoc}
      * Also update the current marker.
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
         if (!$this->valid()) {
@@ -149,12 +152,14 @@ class PaginatedIterator extends ResourceIterator implements Iterator
      * {@inheritDoc}
      * Also reset current marker.
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
         parent::rewind();
         $this->currentMarker = null;
     }
 
+    #[\ReturnTypeWillChange]
     public function valid()
     {
         if ($this->getOption('limit.total') !== false && $this->position >= $this->getOption('limit.total')) {

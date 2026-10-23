@@ -16,7 +16,7 @@ namespace OpenCloud\LoadBalancer\Resource;
  * 
  * @link http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/List_Load_Balancer_Stats-d1e1524.html
  */
-class Stats extends Readonly 
+class Stats extends ReadOnlyResource
 {
     
     /**

@@ -19,7 +19,7 @@ use OpenCloud\Common\Http\Message\Formatter;
  * The DnsObject class is an extension of the PersistentObject class that
  * permits the asynchronous responses used by Cloud DNS
  */
-abstract class Object extends PersistentObject 
+abstract class DnsObject extends PersistentObject 
 {
 
     /**
