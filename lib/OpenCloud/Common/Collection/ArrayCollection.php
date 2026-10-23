@@ -36,6 +36,7 @@ abstract class ArrayCollection implements ArrayAccess, Countable
     /**
      * @return int
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count($this->elements);
@@ -57,6 +58,7 @@ abstract class ArrayCollection implements ArrayAccess, Countable
      * @param mixed $offset
      * @param mixed $value
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
         $this->elements[$offset] = $value;
@@ -78,6 +80,7 @@ abstract class ArrayCollection implements ArrayAccess, Countable
      * @param mixed $offset
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         return isset($this->elements[$offset]);
@@ -99,6 +102,7 @@ abstract class ArrayCollection implements ArrayAccess, Countable
      *
      * @param mixed $offset
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
         unset($this->elements[$offset]);
@@ -110,6 +114,7 @@ abstract class ArrayCollection implements ArrayAccess, Countable
      * @param mixed $offset
      * @return mixed|null
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return $this->offsetExists($offset) ? $this->elements[$offset] : null;
