@@ -25,7 +25,6 @@ class Runner
         'DNS',
         'Database',
         'Identity',
-        'LoadBalancer',
         'ObjectStore',
         'Orchestration',
         'Queues',

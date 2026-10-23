@@ -87,23 +87,6 @@ class Rackspace extends OpenStack
     }
 
     /**
-     * Creates a new Load Balancer service. Note: this is a Rackspace-only feature.
-     *
-     * @param string $name    The name of the service as it appears in the Catalog
-     * @param string $region  The region (DFW, IAD, ORD, LON, SYD)
-     * @param string $urltype The URL type ("publicURL" or "internalURL")
-     * @return \OpenCloud\LoadBalancer\Service
-     */
-    public function loadBalancerService($name = null, $region = null, $urltype = null)
-    {
-        return ServiceBuilder::factory($this, 'OpenCloud\LoadBalancer\Service', array(
-            'name'    => $name, 
-            'region'  => $region, 
-            'urlType' => $urltype
-        ));
-    }
-
-    /**
      * Creates a new DNS service. Note: this is a Rackspace-only feature.
      *
      * @param string $name    The name of the service as it appears in the Catalog
