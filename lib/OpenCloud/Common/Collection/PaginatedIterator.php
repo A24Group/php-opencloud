@@ -70,7 +70,7 @@ class PaginatedIterator extends ResourceIterator implements Iterator
      * @return static
      * @throws \OpenCloud\Common\Exceptions\InvalidArgumentError
      */
-    public static function factory($parent, array $options = array(), array $data = null)
+    public static function factory($parent, array $options = array(), ?array $data = null)
     {
         $list = new static();
 
