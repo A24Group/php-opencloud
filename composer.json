@@ -28,7 +28,7 @@
     ],
     "require": {
         "php" : ">=5.3.3",
-        "a24group/guzzle" : "v3.9.1",
+        "a24group/guzzle" : "^3.10",
         "symfony/event-dispatcher": "v3.4.44"
     },
     "require-dev" : {
