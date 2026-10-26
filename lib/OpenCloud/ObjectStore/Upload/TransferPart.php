@@ -66,7 +66,7 @@ class TransferPart
      */
     public function setETag($etag)
     {
-        $this->etag = $etag;
+        $this->eTag = $etag;
         return $this;
     }
 
@@ -75,7 +75,7 @@ class TransferPart
      */
     public function getETag()
     {
-        return $this->etag;
+        return $this->eTag;
     }
 
     /**

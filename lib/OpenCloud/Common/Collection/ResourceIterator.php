@@ -111,6 +111,7 @@ class ResourceIterator extends ArrayCollection implements Iterator
      *
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
         return $this->offsetExists($this->position) && $this->position < $this->getOption('limit.total');
@@ -119,6 +120,7 @@ class ResourceIterator extends ArrayCollection implements Iterator
     /**
      * Increment the current pointer by 1, and also update the current marker.
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
         $this->position++;
@@ -128,6 +130,7 @@ class ResourceIterator extends ArrayCollection implements Iterator
     /**
      * Reset the pointer and current marker.
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
         $this->position = 0;
@@ -136,6 +139,7 @@ class ResourceIterator extends ArrayCollection implements Iterator
     /**
      * @return mixed
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
         return $this->constructResource($this->currentElement());
@@ -188,6 +192,7 @@ class ResourceIterator extends ArrayCollection implements Iterator
      *
      * @return int|mixed
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
         return $this->position;
