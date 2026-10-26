@@ -13,7 +13,7 @@ class UploadException extends \Exception
 {
     protected $state;
 
-    public function __construct($state, \Exception $exception = null)
+    public function __construct($state, ?\Exception $exception = null)
     {
         parent::__construct(
             'An error was encountered while performing an upload: ' . $exception->getMessage(),
